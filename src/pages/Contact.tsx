@@ -34,7 +34,7 @@ const Contact = () => {
       <section className="relative py-20 bg-workshop-navy overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <img 
-            src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" 
+            src="/auto-workshop-contact.jpg" 
             alt="Contact background" 
             className="w-full h-full object-cover"
           />

@@ -65,7 +65,7 @@ const Hero = () => {
           
           <div className="hidden md:block">
             <div className="w-full h-[500px] bg-workshop-navy/5 rounded-2xl overflow-hidden shadow-xl transition-transform duration-700 hover:scale-[1.02]">
-              <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80')] bg-cover bg-center">
+              <div className="w-full h-full bg-[url('/car-workshop.jpg')] bg-cover bg-center">
                 <div className="w-full h-full bg-gradient-to-tr from-workshop-navy/40 to-transparent flex items-end p-8">
                   <div className="bg-workshop-light/80 backdrop-blur-sm p-4 rounded-lg max-w-xs">
                     <p className="text-sm font-medium text-workshop-navy">
