@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { toast } from '../components/ui/use-toast';
+import { toast } from './ui/use-toast';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
