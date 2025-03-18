@@ -1,9 +1,9 @@
 
 import { useEffect, useRef, useState } from 'react';
-import Hero from '@/components/Hero';
-import ServiceCard from '@/components/ServiceCard';
-import ProductCard from '@/components/ProductCard';
-import ContactForm from '@/components/ContactForm';
+import Hero from '../components/Hero';
+import ServiceCard from '../components/ServiceCard';
+import ProductCard from '../components/ProductCard';
+import ContactForm from '../components/ContactForm';
 import { Wrench, Gauge, Settings, CircuitBoard, Shield, Users, ArrowRight, Zap, RotateCcw, Cpu, Award, Clock, Briefcase, Filter, Search } from 'lucide-react';
 
 const Index = () => {
