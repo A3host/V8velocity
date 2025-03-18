@@ -47,13 +47,13 @@ const ServiceCard = ({ title, description, icon, delay = 0, link }: ServiceCardP
       </div>
       <h3 className="text-xl font-semibold text-workshop-navy mb-2">{title}</h3>
       <p className="text-workshop-charcoal mb-6 flex-grow">{description}</p>
-      <Link 
+      {/* <Link 
         to={link}
         className="group inline-flex items-center text-workshop-navy font-medium text-sm hover:text-workshop-titanium transition-colors duration-300"
       >
         Learn more 
         <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-      </Link>
+      </Link> */}
     </div>
   );
 };

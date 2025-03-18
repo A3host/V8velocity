@@ -65,42 +65,42 @@ const Index = () => {
       title: "Advanced Diagnostics",
       description: "Using state-of-the-art diagnostic equipment, we identify issues with precision. Our technicians are trained to interpret complex data and pinpoint problems quickly.",
       icon: <Gauge />,
-      image: "https://images.unsplash.com/photo-1560179324-c7e50169bdca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "advance.jpg"
     },
     {
       id: "performance",
       title: "Performance Tuning",
       description: "Enhance your vehicle's performance with custom ECU mapping, exhaust upgrades, and suspension modifications. We fine-tune every aspect for optimal results.",
       icon: <Settings />,
-      image: "https://images.unsplash.com/photo-1553502936-3fd3e6c36929?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "performance.jpg"
     },
     {
       id: "maintenance",
       title: "Preventative Maintenance",
       description: "Regular servicing prevents costly repairs and extends vehicle life. Our maintenance programs are tailored to your specific vehicle model and driving habits.",
       icon: <Wrench />,
-      image: "https://images.unsplash.com/photo-1493043326353-ef466075dd33?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "preventative.jpg"
     },
     {
       id: "electrical",
       title: "Electrical Systems",
       description: "From troubleshooting complex electrical faults to installing high-end audio systems, our specialists handle all automotive electrical needs with precision.",
       icon: <Zap />,
-      image: "https://images.unsplash.com/photo-1453939674550-c76f42921085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "electrical.jpg"
     },
     {
       id: "engine",
       title: "Engine Rebuilds",
       description: "Complete engine overhauls and rebuilds performed to exacting standards. We restore power, efficiency, and reliability to aging or damaged engines.",
       icon: <RotateCcw />,
-      image: "https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "rebuild.jpg"
     },
     {
       id: "software",
       title: "Software Updates",
       description: "Keep your vehicle's systems current with manufacturer software updates and security patches, ensuring optimal performance and functionality.",
       icon: <Cpu />,
-      image: "https://images.unsplash.com/photo-1533750169210-6f7d1dd68d76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      image: "updates.jpg"
     }
   ];
 
@@ -144,7 +144,7 @@ const Index = () => {
     {
       id: 2,
       name: 'Premium Synthetic Oil',
-      image: 'https://images.unsplash.com/photo-1635359056637-1950c9d09811?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'synthetic.jpg',
       price: '£49.99',
       category: 'fluids',
       description: 'Advanced synthetic formula for superior engine protection and performance.'
@@ -168,7 +168,7 @@ const Index = () => {
     {
       id: 5,
       name: 'Complete Service Kit',
-      image: 'https://images.unsplash.com/photo-1572540688236-b3e5d78cd3c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'servicekit.jpg',
       price: '£199.99',
       category: 'maintenance',
       description: 'All-inclusive service kit with premium filters, plugs, and fluids for comprehensive maintenance.'
@@ -176,7 +176,7 @@ const Index = () => {
     {
       id: 6,
       name: 'LED Interior Lighting Kit',
-      image: 'https://images.unsplash.com/photo-1551826152-d7518ee27220?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'lightingkit.jpg',
       price: '£69.99',
       category: 'accessories',
       description: 'Custom LED lighting system for interior ambiance and personalization.'
@@ -347,7 +347,7 @@ const Index = () => {
               <div 
                 id={service.id}
                 key={service.id}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center appear-animation ${
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                   index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                 }`}
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -387,7 +387,7 @@ const Index = () => {
             <span className="inline-block px-3 py-1 mb-3 text-xs font-medium tracking-wider text-workshop-titanium uppercase bg-workshop-titanium/10 rounded-full">
               Our Process
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">The Precision Auto Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">Turbo Tech Auto Experience</h2>
             <p className="text-workshop-charcoal max-w-3xl mx-auto">
               Our systematic approach ensures every vehicle receives meticulous attention and care from initial consultation to delivery.
             </p>
@@ -442,9 +442,9 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">
               Craftsmanship Meets Innovation
             </h2>
-            <p className="text-workshop-charcoal max-w-3xl mx-auto">
+            {/* <p className="text-workshop-charcoal max-w-3xl mx-auto">
               Since 1998, Precision Auto has set the standard for luxury and performance vehicle care in the UK, combining traditional expertise with cutting-edge technology.
-            </p>
+            </p> */}
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -452,22 +452,22 @@ const Index = () => {
               <span className="inline-block px-3 py-1 mb-3 text-xs font-medium tracking-wider text-workshop-titanium uppercase bg-workshop-titanium/10 rounded-full">
                 Our Story
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-6">
+              {/* <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-6">
                 A Legacy of Excellence
-              </h2>
+              </h2> */}
               
               <div className="space-y-6 text-workshop-charcoal">
-                <p>
+                {/* <p>
                   Precision Auto was founded in 1998 by James Harrison, a master technician with extensive experience working with prestigious European manufacturers. What began as a small specialist workshop has evolved into one of the UK's premier destinations for luxury and performance vehicle care.
-                </p>
+                </p> */}
                 <p>
                   Our journey has always been guided by a simple philosophy: combine traditional craftsmanship with innovative technology to deliver exceptional results. This approach has earned us the trust of discerning vehicle owners across the country.
                 </p>
                 <p>
-                  Today, our team of specialists continues to uphold the standards that have defined Precision Auto for over two decades: technical excellence, uncompromising quality, and a genuine passion for automotive perfection.
+                  Today, our team of specialists continues to uphold the standards that have defined Turbotech Auto for over two decades: technical excellence, uncompromising quality, and a genuine passion for automotive perfection.
                 </p>
               </div>
-              
+{/*               
               <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-workshop-titanium mb-1">25+</div>
@@ -485,7 +485,7 @@ const Index = () => {
                   <div className="text-3xl font-bold text-workshop-titanium mb-1">98%</div>
                   <div className="text-sm text-workshop-charcoal">Client Satisfaction</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             <div className="appear-animation" style={{ animationDelay: '200ms' }}>
@@ -498,12 +498,12 @@ const Index = () => {
                   />
                 </div>
                 
-                <div className="absolute -bottom-6 -right-6 bg-workshop-light p-5 rounded-lg shadow-lg max-w-xs hidden md:block">
+                {/* <div className="absolute -bottom-6 -right-6 bg-workshop-light p-5 rounded-lg shadow-lg max-w-xs hidden md:block">
                   <p className="italic text-workshop-charcoal">
                     "Our mission is to deliver a level of service and expertise that exceeds expectations with every vehicle we touch."
                   </p>
                   <p className="mt-2 font-medium text-workshop-navy">— James Harrison, Founder</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -515,7 +515,7 @@ const Index = () => {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">What Drives Us</h2>
             <p className="text-workshop-charcoal max-w-3xl mx-auto">
-              These core principles guide everything we do at Precision Auto, from how we approach vehicle care to how we interact with our clients.
+              These core principles guide everything we do at Turbotech Auto, from how we approach vehicle care to how we interact with our clients.
             </p>
           </div>
           
@@ -536,7 +536,7 @@ const Index = () => {
           </div>
           
           {/* Team */}
-          <div ref={teamRef} className="appear-animation text-center mt-32 mb-16">
+          {/* <div ref={teamRef} className="appear-animation text-center mt-32 mb-16">
             <span className="inline-block px-3 py-1 mb-3 text-xs font-medium tracking-wider text-workshop-titanium uppercase bg-workshop-titanium/10 rounded-full">
               Our Team
             </span>
@@ -544,9 +544,9 @@ const Index = () => {
             <p className="text-workshop-charcoal max-w-3xl mx-auto">
               Our team combines decades of experience with specialized expertise across all aspects of luxury and performance vehicle care.
             </p>
-          </div>
+          </div> */}
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <div 
                 key={index}
@@ -567,7 +567,7 @@ const Index = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -748,8 +748,8 @@ const Index = () => {
           </div>
           
           {/* Map Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="appear-animation">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-12"> */}
+            {/* <div className="appear-animation">
               <h3 className="text-2xl font-bold text-workshop-navy mb-6">Find Us</h3>
               <p className="text-workshop-charcoal mb-6">
                 Our workshop is conveniently located in central London with easy access from major routes. We offer a comfortable waiting area with complimentary refreshments and Wi-Fi for clients who prefer to wait while their vehicle is being serviced.
@@ -773,12 +773,12 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             
-            <div ref={mapRef} className="appear-animation">
-              <div className="bg-workshop-light rounded-xl overflow-hidden shadow-md h-[400px]">
+            {/* <div ref={mapRef} className="appear-animation">
+              <div className="bg-workshop-light rounded-xl overflow-hidden shadow-md h-[400px]"> */}
                 {/* This would normally contain an actual map embed */}
-                <div className="w-full h-full bg-workshop-slate/50 flex items-center justify-center p-8 text-center">
+                {/* <div className="w-full h-full bg-workshop-slate/50 flex items-center justify-center p-8 text-center">
                   <div>
                     <p className="text-workshop-navy font-medium mb-2">Interactive Map</p>
                     <p className="text-workshop-charcoal text-sm">
@@ -788,7 +788,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           
           {/* FAQs Section */}
           <div className="mt-20">
@@ -845,7 +845,7 @@ const Index = () => {
               Ready to Experience True Automotive Excellence?
             </h2>
             <p className="text-workshop-charcoal mb-8 text-lg">
-              Schedule a consultation with our team of experts or visit our workshop to discuss your vehicle's needs and discover the Precision Auto difference.
+              Schedule a consultation with our team of experts or visit our workshop to discuss your vehicle's needs and discover the Turbotech Auto difference.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

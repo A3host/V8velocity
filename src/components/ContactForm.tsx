@@ -44,7 +44,7 @@ const ContactForm = () => {
       <div className="md:order-2 animate-fade-in">
         <h3 className="text-2xl font-semibold text-workshop-navy mb-6">Contact Information</h3>
         <div className="space-y-6">
-          <div className="flex items-start space-x-4">
+          {/* <div className="flex items-start space-x-4">
             <div className="bg-workshop-titanium/10 text-workshop-titanium p-3 rounded-full">
               <MapPin size={20} />
             </div>
@@ -52,9 +52,9 @@ const ContactForm = () => {
               <h4 className="font-medium text-workshop-navy">Our Location</h4>
               <p className="text-workshop-charcoal mt-1">123 Workshop Drive, London, UK SE1 7PB</p>
             </div>
-          </div>
+          </div> */}
           
-          <div className="flex items-start space-x-4">
+          {/* <div className="flex items-start space-x-4">
             <div className="bg-workshop-titanium/10 text-workshop-titanium p-3 rounded-full">
               <Phone size={20} />
             </div>
@@ -62,7 +62,7 @@ const ContactForm = () => {
               <h4 className="font-medium text-workshop-navy">Phone Number</h4>
               <p className="text-workshop-charcoal mt-1">+44 20 1234 5678</p>
             </div>
-          </div>
+          </div> */}
           
           <div className="flex items-start space-x-4">
             <div className="bg-workshop-titanium/10 text-workshop-titanium p-3 rounded-full">
@@ -70,7 +70,7 @@ const ContactForm = () => {
             </div>
             <div>
               <h4 className="font-medium text-workshop-navy">Email Address</h4>
-              <p className="text-workshop-charcoal mt-1">info@precisionauto.co.uk</p>
+              <p className="text-workshop-charcoal mt-1">info@turbotechautoltd.co.uk</p>
             </div>
           </div>
         </div>

@@ -9,9 +9,9 @@ const Footer = () => {
     <footer className="bg-workshop-navy text-workshop-light">
       <div className="workshop-container">
         <div className="section-padding grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-3 md:col-span-3">
             <Link to="/" className="inline-block text-xl font-semibold tracking-tighter mb-4">
-              PRECISION<span className="text-workshop-titanium">AUTO</span>
+              TURBOTECH<span className="text-workshop-titanium">AUTO</span>
             </Link>
             <p className="text-workshop-silver mb-6 text-sm">
               Premium automotive service specializing in luxury and performance vehicles. Excellence in engineering since 1998.
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-1">
+          {/* <div className="md:col-span-1">
             <h4 className="text-lg font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
@@ -61,9 +61,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           
-          <div className="md:col-span-1">
+          {/* <div className="md:col-span-1">
             <h4 className="text-lg font-medium mb-4">Services</h4>
             <ul className="space-y-2">
               <li>
@@ -92,28 +92,28 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           
           <div className="md:col-span-1">
             <h4 className="text-lg font-medium mb-4">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <MapPin size={18} className="text-workshop-titanium mt-1 mr-3 flex-shrink-0" />
                 <span className="text-workshop-silver">123 Workshop Drive, London, UK SE1 7PB</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="text-workshop-titanium mr-3 flex-shrink-0" />
                 <span className="text-workshop-silver">+44 20 1234 5678</span>
-              </li>
+              </li> */}
               <li className="flex items-center">
                 <Mail size={18} className="text-workshop-titanium mr-3 flex-shrink-0" />
-                <span className="text-workshop-silver">info@precisionauto.co.uk</span>
+                <span className="text-workshop-silver">info@turbotechautoltd.co.uk</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-workshop-navy-700 py-6 text-center md:text-left text-sm text-workshop-silver flex flex-col md:flex-row justify-between items-center">
+        {/* <div className="border-t border-workshop-navy-700 py-6 text-center md:text-left text-sm text-workshop-silver flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {currentYear} Precision Auto Workshop Ltd. All rights reserved.</p>
           <div className="mt-4 md:mt-0 space-x-4">
             <Link to="/privacy" className="hover:text-workshop-titanium transition-colors duration-300">
@@ -123,7 +123,7 @@ const Footer = () => {
               Terms of Service
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
