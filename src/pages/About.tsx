@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Users, Clock, Tool, Briefcase, Shield } from 'lucide-react';
+import { ArrowRight, Award, Users, Clock, CircuitBoard, Briefcase, Shield } from 'lucide-react';
 
 const About = () => {
   const storyRef = useRef<HTMLDivElement>(null);
@@ -61,7 +61,7 @@ const About = () => {
       description: "We respect your time and schedule, ensuring accurate time estimates and on-time delivery of your vehicle."
     },
     {
-      icon: <Tool />,
+      icon: <CircuitBoard />,
       title: "Innovation",
       description: "We embrace both traditional craftsmanship and cutting-edge technology to provide superior automotive care."
     },
