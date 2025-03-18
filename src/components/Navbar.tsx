@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
@@ -9,11 +9,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Products', path: '/products' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Home', path: '#home' },
+    { name: 'Services', path: '#services' },
+    { name: 'Products', path: '#products' },
+    { name: 'About', path: '#about' },
+    { name: 'Contact', path: '#contact' }
   ];
 
   useEffect(() => {
@@ -34,6 +34,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    e.preventDefault();
+    const element = document.querySelector(path);
+    if (element) {
+      window.scrollTo({
+        top: element.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: 'smooth'
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -42,25 +54,25 @@ const Navbar = () => {
     >
       <div className="workshop-container">
         <div className="flex items-center justify-between h-20">
-          <Link 
-            to="/" 
+          <a 
+            href="#home" 
+            onClick={(e) => handleNavClick(e, '#home')}
             className="text-workshop-navy font-semibold text-xl md:text-2xl tracking-tighter transition-opacity duration-300 hover:opacity-80"
           >
             PRECISION<span className="text-workshop-titanium">AUTO</span>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.path}
-                to={link.path}
-                className={`text-workshop-charcoal text-sm font-medium transition-colors duration-300 link-hover ${
-                  location.pathname === link.path ? 'text-workshop-titanium' : 'hover:text-workshop-titanium'
-                }`}
+                href={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
+                className="text-workshop-charcoal text-sm font-medium transition-colors duration-300 link-hover hover:text-workshop-titanium"
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -82,15 +94,14 @@ const Navbar = () => {
         >
           <div className="workshop-container flex flex-col space-y-4 px-4">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.path}
-                to={link.path}
-                className={`text-workshop-charcoal py-2 text-base font-medium transition-colors duration-300 ${
-                  location.pathname === link.path ? 'text-workshop-titanium' : 'hover:text-workshop-titanium'
-                }`}
+                href={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
+                className="text-workshop-charcoal py-2 text-base font-medium transition-colors duration-300 hover:text-workshop-titanium"
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>
