@@ -42,12 +42,6 @@ const ProductCard = ({ name, image, price, category, description, delay = 0 }: P
     setIsLoading(false);
   };
 
-  // Use a fallback image if the provided one fails to load
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.src = '/placeholder.svg';
-    setIsLoading(false);
-  };
-
   return (
     <div 
       ref={cardRef}
@@ -64,7 +58,6 @@ const ProductCard = ({ name, image, price, category, description, delay = 0 }: P
           alt={name} 
           className={`w-full h-full object-cover transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
           onLoad={handleImageLoad}
-          onError={handleImageError}
         />
         <div className="absolute top-3 left-3">
           <span className="px-2 py-1 text-xs font-medium bg-workshop-light/80 backdrop-blur-sm text-workshop-navy rounded-full">
