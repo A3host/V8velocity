@@ -1,9 +1,9 @@
 
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Hero from '../components/Hero';
-import ServiceCard from '../components/ServiceCard';
-import { Wrench, Gauge, Settings, ToolIcon, Shield, Users, ArrowRight } from 'lucide-react';
+import Hero from '@/components/Hero';
+import ServiceCard from '@/components/ServiceCard';
+import { Wrench, Gauge, Settings, Tool, Shield, Users, ArrowRight } from 'lucide-react';
 
 const Index = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -63,7 +63,7 @@ const Index = () => {
     {
       title: "Electrical Systems",
       description: "Expert diagnostics and repair of complex electrical and electronic vehicle systems.",
-      icon: <ToolIcon />,
+      icon: <Tool />,
       link: "/services#electrical"
     },
     {
