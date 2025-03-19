@@ -18,29 +18,29 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message Sent",
-        description: "Thank you for contacting us. We'll get back to you shortly.",
-      });
-      setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-      });
-    }, 1500);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message Sent",
+  //       description: "Thank you for contacting us. We'll get back to you shortly.",
+  //     });
+  //     setIsSubmitting(false);
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       phone: '',
+  //       subject: '',
+  //       message: ''
+  //     });
+  //   }, 1500);
+  // };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div  className="grid grid-cols-1 md:grid-cols-2 gap-12">
       <div className="md:order-2 animate-fade-in">
         <h3 className="text-2xl font-semibold text-workshop-navy mb-6">Contact Information</h3>
         <div className="space-y-6">
@@ -96,7 +96,8 @@ const ContactForm = () => {
       
       <div className="md:order-1 animate-fade-in" style={{ animationDelay: '200ms' }}>
         <h3 className="text-2xl font-semibold text-workshop-navy mb-6">Send Us a Message</h3>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form action="https://formspree.io/f/mqapepjw"
+    method="POST" className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-workshop-charcoal mb-1">
               Full Name

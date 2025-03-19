@@ -48,18 +48,18 @@ const Hero = () => {
               At Precision Auto, we combine traditional craftsmanship with cutting-edge technology to deliver unparalleled automotive care for luxury and performance vehicles.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link 
-                to="/services" 
+              <a 
+                href="#services" 
                 className="flex items-center gap-2 px-6 py-3 bg-workshop-navy text-workshop-light font-medium rounded-md transition-all duration-300 hover:bg-workshop-charcoal hover:shadow-lg"
               >
                 Our Services <ArrowRight size={16} />
-              </Link>
-              <Link 
-                to="/contact" 
+              </a>
+              <a 
+                href="#contact" 
                 className="px-6 py-3 border border-workshop-navy text-workshop-navy font-medium rounded-md transition-all duration-300 hover:bg-workshop-navy hover:text-workshop-light"
               >
                 Contact Us
-              </Link>
+              </a>
             </div>
           </div>
           
