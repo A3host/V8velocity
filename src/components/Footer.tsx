@@ -13,9 +13,6 @@ const Footer = () => {
             <Link to="/" className="inline-block text-xl font-semibold tracking-tighter mb-4">
               V8<span className="text-workshop-titanium">VELOCITY</span>
             </Link>
-            <p className="text-workshop-silver mb-6 text-sm">
-              Premium automotive service specializing in luxury and performance vehicles. Excellence in engineering since 1998.
-            </p>
             <div className="flex space-x-4">
               <a href="#" className="text-workshop-silver hover:text-workshop-titanium transition-colors duration-300" aria-label="Facebook">
                 <Facebook size={20} />
