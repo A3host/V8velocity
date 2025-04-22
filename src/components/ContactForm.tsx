@@ -70,7 +70,7 @@ const ContactForm = () => {
             </div>
             <div>
               <h4 className="font-medium text-workshop-navy">Email Address</h4>
-              <p className="text-workshop-charcoal mt-1">info@turbotechautoltd.co.uk</p>
+              <p className="text-workshop-charcoal mt-1">info@v8velocityltd.co.uk</p>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const ContactForm = () => {
       
       <div className="md:order-1 animate-fade-in" style={{ animationDelay: '200ms' }}>
         <h3 className="text-2xl font-semibold text-workshop-navy mb-6">Send Us a Message</h3>
-        <form action="https://formspree.io/f/mqapepjw"
+        <form action="https://formspree.io/f/xldjqydd"
     method="POST" className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-workshop-charcoal mb-1">

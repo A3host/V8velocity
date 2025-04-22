@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div ref={heroRef} className="appear-animation">
             <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-workshop-titanium uppercase bg-workshop-titanium/10 rounded-full">
-            Turbotech Auto Workshop
+            V8 Velocity Workshop
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-workshop-navy mb-6">
               Precision Engineering for <span className="text-workshop-titanium">Exceptional</span> Performance

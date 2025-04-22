@@ -387,7 +387,7 @@ const Index = () => {
             <span className="inline-block px-3 py-1 mb-3 text-xs font-medium tracking-wider text-workshop-titanium uppercase bg-workshop-titanium/10 rounded-full">
               Our Process
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">Turbo Tech Auto Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">V8 Velocity Experience</h2>
             <p className="text-workshop-charcoal max-w-3xl mx-auto">
               Our systematic approach ensures every vehicle receives meticulous attention and care from initial consultation to delivery.
             </p>
@@ -464,7 +464,7 @@ const Index = () => {
                   Our journey has always been guided by a simple philosophy: combine traditional craftsmanship with innovative technology to deliver exceptional results. This approach has earned us the trust of discerning vehicle owners across the country.
                 </p>
                 <p>
-                  Today, our team of specialists continues to uphold the standards that have defined Turbotech Auto for over two decades: technical excellence, uncompromising quality, and a genuine passion for automotive perfection.
+                  Today, our team of specialists continues to uphold the standards that have defined V8 Velocity for over two decades: technical excellence, uncompromising quality, and a genuine passion for automotive perfection.
                 </p>
               </div>
 {/*               
@@ -515,7 +515,7 @@ const Index = () => {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-workshop-navy mb-4">What Drives Us</h2>
             <p className="text-workshop-charcoal max-w-3xl mx-auto">
-              These core principles guide everything we do at Turbotech Auto, from how we approach vehicle care to how we interact with our clients.
+              These core principles guide everything we do at V8 Velocity, from how we approach vehicle care to how we interact with our clients.
             </p>
           </div>
           
@@ -845,7 +845,7 @@ const Index = () => {
               Ready to Experience True Automotive Excellence?
             </h2>
             <p className="text-workshop-charcoal mb-8 text-lg">
-              Schedule a consultation with our team of experts or visit our workshop to discuss your vehicle's needs and discover the Turbotech Auto difference.
+              Schedule a consultation with our team of experts or visit our workshop to discuss your vehicle's needs and discover the V8 Velocity difference.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="section-padding grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-3 md:col-span-3">
             <Link to="/" className="inline-block text-xl font-semibold tracking-tighter mb-4">
-              TURBOTECH<span className="text-workshop-titanium">AUTO</span>
+              V8<span className="text-workshop-titanium">VELOCITY</span>
             </Link>
             <p className="text-workshop-silver mb-6 text-sm">
               Premium automotive service specializing in luxury and performance vehicles. Excellence in engineering since 1998.
@@ -107,7 +107,7 @@ const Footer = () => {
               </li> */}
               <li className="flex items-center">
                 <Mail size={18} className="text-workshop-titanium mr-3 flex-shrink-0" />
-                <span className="text-workshop-silver">info@turbotechautoltd.co.uk</span>
+                <span className="text-workshop-silver">info@v8velocityltd.co.uk</span>
               </li>
             </ul>
           </div>

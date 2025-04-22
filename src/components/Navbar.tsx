@@ -59,7 +59,7 @@ const Navbar = () => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="text-workshop-navy font-semibold text-xl md:text-2xl tracking-tighter transition-opacity duration-300 hover:opacity-80"
           >
-            TURBOTECH<span className="text-workshop-titanium">AUTO</span>
+            V8<span className="text-workshop-titanium">VELOCITY</span>
           </a>
 
           {/* Desktop Navigation */}
