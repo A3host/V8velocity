@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { toast } from './ui/use-toast';
@@ -44,15 +43,15 @@ const ContactForm = () => {
       <div className="md:order-2 animate-fade-in">
         <h3 className="text-2xl font-semibold text-workshop-navy mb-6">Contact Information</h3>
         <div className="space-y-6">
-          {/* <div className="flex items-start space-x-4">
+          <div className="flex items-start space-x-4">
             <div className="bg-workshop-titanium/10 text-workshop-titanium p-3 rounded-full">
               <MapPin size={20} />
             </div>
             <div>
               <h4 className="font-medium text-workshop-navy">Our Location</h4>
-              <p className="text-workshop-charcoal mt-1">123 Workshop Drive, London, UK SE1 7PB</p>
+              <p className="text-workshop-charcoal mt-1">Unit 2 Bentley Lane, Walsall, England, WS28TL</p>
             </div>
-          </div> */}
+          </div>
           
           {/* <div className="flex items-start space-x-4">
             <div className="bg-workshop-titanium/10 text-workshop-titanium p-3 rounded-full">
